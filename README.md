@@ -1,8 +1,8 @@
 # Deploy Django and Nextjs using Nginx, Celery, Redis and Postgresql with Docker
 
-RESTful API application based on a picpay bank challenge.
+RESTful API application based on a bossabox challenge.
 
-[Challange Repository](https://github.com/PicPay/picpay-desafio-backend)
+[Challange Repository](https://bossabox.notion.site/Back-end-0b2c45f1a00e4a849eefe3b1d57f23c6)
 
 
 ## Basic Usage

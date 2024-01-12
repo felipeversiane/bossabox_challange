@@ -5,7 +5,7 @@ from rest_framework import routers
 from .views import *
 
 router = routers.DefaultRouter()
-
+router.register(r'tools',ToolViewSet,basename='tools')
 
 urlpatterns = [
     re_path('', include(router.urls)),

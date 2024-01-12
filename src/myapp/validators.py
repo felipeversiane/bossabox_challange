@@ -3,6 +3,9 @@ from django.core.exceptions import ValidationError
 import re
 
 
+#MIN : 1 uppercase letter , 1 number and 1 especial character .
+PASSWORD_REGEX = r'^(?=.*[A-Z])(?=.*\d)(?=.*[~!@#$%^&*()_+{}":;\'])(?!.*\s).{8,}$'
+
 def validate_first_letter(str):    
     if str[0].isdigit():        
         raise ValidationError("First letter cannot be a number.")

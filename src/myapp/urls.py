@@ -6,8 +6,10 @@ from .views import *
 
 router = routers.DefaultRouter()
 router.register(r'tools',ToolViewSet,basename='tools')
+router.register(r'signup',SignupViewSet,basename='signup')
 
 urlpatterns = [
     re_path('', include(router.urls)),
+    
     
 ]

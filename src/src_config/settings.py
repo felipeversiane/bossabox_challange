@@ -29,6 +29,9 @@ PREREQUISITE_APPS = [
     'rest_framework',
     'celery',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+    'drf_yasg',
+
 
 ]
 
@@ -95,7 +98,15 @@ DATABASES = {
     }
 }
 
+
+
 #Simple JWT Configuration 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),

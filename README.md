@@ -33,3 +33,77 @@ To use this project, run this commands:
 13. `make log-db` to log access db container.
 14. `make log-nginx` to log access nginx container.
 15. `make restart` to restart containers.
+
+
+## API Documentation
+
+#### Tools endpoint
+
+```http
+  GET /api/myapp/tools
+```
+
+#### Search a tool by tag
+
+```http
+  POST /api/myapp/tools?tag="tagname"
+```
+#### Register a user
+
+```http
+  POST /api/myapp/signup/
+```
+
+## Swagger (drf_yasg)
+
+#### Swagger
+
+```http
+  GET /swagger
+```
+
+#### Redoc
+
+```http
+  GET /doc
+```
+
+## Authentication and tokens by simplejwt
+
+#### Get acess and refresh token
+
+```http
+  GET /api/token
+```
+
+#### Get acess and refresh token
+
+```http
+  POST /api/token
+```
+
+#### Get acess token by refresh token
+
+```http
+  POST /api/token/refresh
+```
+
+#### Verify your token
+
+```http
+  POST /api/token/verify
+```
+
+#### Add token to blacklist
+
+```http
+  POST /api/token/blacklist
+```
+
+
+
+
+
+
+
+

@@ -34,27 +34,9 @@ To use this project, run this commands:
 14. `make log-nginx` to log access nginx container.
 15. `make restart` to restart containers.
 
+## Swagger | API Documentation (drf_yasg)
 
-## API Documentation
-
-#### Tools endpoint
-
-```http
-  GET /api/myapp/tools
-```
-
-#### Search a tool by tag
-
-```http
-  POST /api/myapp/tools?tag="tagname"
-```
-#### Register a user
-
-```http
-  POST /api/myapp/signup/
-```
-
-## Swagger (drf_yasg)
+In swagger you will find the documentation for everything, all the methods and models routes and their respective attributes, you can access it through the route
 
 #### Swagger
 
@@ -68,38 +50,7 @@ To use this project, run this commands:
   GET /doc
 ```
 
-## Authentication and tokens by simplejwt
-
-#### Get acess and refresh token
-
-```http
-  GET /api/token
-```
-
-#### Get acess and refresh token
-
-```http
-  POST /api/token
-```
-
-#### Get acess token by refresh token
-
-```http
-  POST /api/token/refresh
-```
-
-#### Verify your token
-
-```http
-  POST /api/token/verify
-```
-
-#### Add token to blacklist
-
-```http
-  POST /api/token/blacklist
-```
-
+#
 
 
 
